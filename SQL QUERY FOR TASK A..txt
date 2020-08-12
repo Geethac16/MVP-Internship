@@ -1,0 +1,10 @@
+A.Display a list of all property names and their property id’s for Owner Id: 1426. 
+
+SELECT P.Name as PropertyName, OP.PropertyId 
+
+ 
+FROM OwnerProperty OP
+    JOIN Property P 
+     
+ ON OP.PropertyId=P.Id
+WHERE OwnerId=1426
